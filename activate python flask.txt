@@ -1,0 +1,26 @@
+// inital install project pyhton
+python -m venv virtualenvi
+
+//aktivasi project python
+** windows
+virtualenvi\Scripts\activate
+** UNIX
+source virtualenvi/bin/activate
+
+//Install pip
+python -m pip install --upgrade pip
+
+//Install library
+bikin file 'req.txt' dan masukkan library yang mau di install
+
+pip install -r req.txt
+
+
+// untuk install migration
+flask db init
+
+//untuk bikin version migration
+flask db migrate -m "users todo"
+
+// untuk bikin migration ke dalam table
+flask db upgrade
